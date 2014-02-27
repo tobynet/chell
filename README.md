@@ -1,8 +1,10 @@
 # Chell
 
+![Temporary Chell's logo](//raw.github.com/toooooooby/chell/master/resources/logo.png)
+
 Ruby + csv + [pry] + [lambda_driver] => csv-shell => **Chell!!** 
 
-`Chell` is a servant to help us with our cooking of CSV(Comma-separated values)
+`Chell` is a servant who helps us with our cooking of CSV(Comma-separated values)
 
 ## Installation
 
@@ -43,6 +45,7 @@ with [Lambda Driver][lambda_driver]
 * todo: Make a proper graphical logo( like a servant with a machine toolkit )
 * todo: Add encoding options like `ruby -Ks chell.rb`
 * todo: Write spec(It's a shame that this project is not test first!!)
+* todo: Write usage.
 
 ----
 

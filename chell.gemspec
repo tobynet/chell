@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Chell::VERSION
   spec.authors       = ["toooooooby"]
   spec.email         = ["toby.net.info.mail+git@gmail.com"]
-  spec.summary       = %q{csv + pry + lambda_driver => csv-shell => chell}
+  spec.summary       = %q{csv + pry + lambda_driver => csv-shell => Chell}
   spec.description   = %q{Chell is a tool which is easy to manipulate CSV}
   spec.homepage      = "https://github.com/toooooooby/chell"
   spec.license       = "MIT"

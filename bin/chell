@@ -8,11 +8,11 @@ require 'optparse'
 program_name = File.basename(__FILE__)
 opt = OptionParser.new do |opts|
   opts.banner = File.read(File.join(File.dirname(__FILE__), "../README.md")).scan(/^`Chell` .*/).first
-  opts.define_head "Usage: #{program_name} [foobar.csv]"
+  opts.define_head "Usage: #{program_name} FILE.CSV"
   opts.separator <<-EOD
 
 Examples:
-  #{program_name} -Ecp932 foobar.csv
+  $ #{program_name} --encoding cp932 foobar.csv
 
 Options:
   EOD
