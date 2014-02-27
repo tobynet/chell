@@ -1,3 +1,39 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '../lib')
 require 'chell'
+
+# Parse options
+require 'optparse'
+program_name = File.basename(__FILE__)
+opt = OptionParser.new do |opts|
+  opts.banner = File.read(File.join(File.dirname(__FILE__), "../README.md")).scan(/^`Chell` .*/).first
+  opts.define_head "Usage: #{program_name} [foobar.csv]"
+  opts.separator <<-EOD
+
+Examples:
+  #{program_name} -Ecp932 foobar.csv
+
+Options:
+  EOD
+
+  opts.on('-E', '--encoding ENCODING', 
+               'Set external encoding(Default: depending ruby version)') do |encoding|
+    Encoding.default_external = encoding
+    puts "Encoding.default_external: #{Encoding.default_external}"
+  end
+
+  opts.on_tail('-h', '--help', 'Show this message') do
+    puts opts
+    exit
+  end
+end
+opt.parse!
+
+if ARGV.empty?
+  puts opt
+  exit
+end
+
+filename = ARGV.shift
+Chell::CSV.new(File.read(filename)).run_shell!

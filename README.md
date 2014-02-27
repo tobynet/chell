@@ -1,29 +1,50 @@
 # Chell
 
-TODO: Write a gem description
+Ruby + csv + [pry] + [lambda_driver] => csv-shell => **Chell!!** 
+
+`Chell` is a servant to help us with our cooking of CSV(Comma-separated values)
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'chell'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install chell
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ cat foobar.csv
+    :
+$ chell foobar.csv
+> size
+10
+> headers
+:  # Show first column of CSV
+> col 3
+  :
+> row 2
+  :
+> col(3).map.sort.uniq
+  :
+> col(3){|x| x.upcase }
+  :
+> col!(3){|x| x.upcase }
+  :
+> write 'test.csv'
+```
 
-## Contributing
+with [Lambda Driver][lambda_driver]
 
-1. Fork it ( http://github.com/<my-github-username>/chell/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```
+> col(3).map(&:to_s >> :upcase)
+```
+
+## Todos
+
+* todo: Add some badges below title after finishing configurations their services.
+* todo: Make a proper graphical logo( like a servant with a machine toolkit )
+* todo: Add encoding options like `ruby -Ks chell.rb`
+* todo: Write spec(It's a shame that this project is not test first!!)
+
+----
+
+[pry]: http://pryrepl.org/ "Pry - an IRB alternative and runtime developer console"
+[lambda_driver]: http://yuroyoro.github.io/lambda_driver/ "LambdaDriver by yuroyoro"
