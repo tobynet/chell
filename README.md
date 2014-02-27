@@ -43,7 +43,6 @@ with [Lambda Driver][lambda_driver]
 
 * todo: Add some badges below title after finishing configurations their services.
 * todo: Make a proper graphical logo( like a servant with a machine toolkit )
-* todo: Add encoding options like `ruby -Ks chell.rb`
 * todo: Write spec(It's a shame that this project is not test first!!)
 * todo: Write usage.
 
