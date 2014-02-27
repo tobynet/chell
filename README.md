@@ -1,5 +1,7 @@
 # Chell
 
+[![Gem Version](https://badge.fury.io/rb/chell.png)](http://badge.fury.io/rb/chell) [![Dependency Status](https://gemnasium.com/toooooooby/chell.png)](https://gemnasium.com/toooooooby/chell) [![Code Climate](https://codeclimate.com/github/toooooooby/chell.png)](https://codeclimate.com/github/toooooooby/chell)
+
 ![Temporary Chell's logo](https://raw.github.com/toooooooby/chell/master/resources/logo.png)
 
 Ruby + csv + [pry] + [lambda_driver] => csv-shell => **Chell!!** 
