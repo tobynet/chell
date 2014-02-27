@@ -1,6 +1,6 @@
 # Chell
 
-![Temporary Chell's logo](//raw.github.com/toooooooby/chell/master/resources/logo.png)
+![Temporary Chell's logo](https://raw.github.com/toooooooby/chell/master/resources/logo.png)
 
 Ruby + csv + [pry] + [lambda_driver] => csv-shell => **Chell!!** 
 
