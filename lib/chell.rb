@@ -5,6 +5,8 @@ require 'pry'
 
 module Chell
   class CSV
+    attr_reader :table
+
     def initialize(data, options = {})
       @options = {headers: true}.merge(options)
       @table = ::CSV.new(data, @options).read
@@ -54,3 +56,23 @@ module Chell
   end
 
 end
+
+# An alias method of Chell::CSV.new
+#
+#   csv = Chell(File.read('example.csv'))
+#   p csv.headers
+#
+# If a block is given, `csv.table` is passed the block.
+#
+#   Chell(File.read('example.csv')) do |csv|
+#     p csv.headers
+#   end
+def Chell(*args, &block)
+  instance = Chell::CSV.new(*args)
+  if block_given?
+    yield instance.table
+  else
+    instance
+  end
+end
+
