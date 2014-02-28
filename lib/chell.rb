@@ -57,7 +57,7 @@ module Chell
 
 end
 
-# An alias method of Chell::CSV.new
+# An alias method for using Chell
 #
 #   csv = Chell(File.read('example.csv'))
 #   p csv.headers
@@ -68,11 +68,11 @@ end
 #     p csv.headers
 #   end
 def Chell(*args, &block)
-  instance = Chell::CSV.new(*args)
+  table = Chell::CSV.new(*args).table
   if block_given?
-    yield instance.table
+    yield table
   else
-    instance
+    table
   end
 end
 
