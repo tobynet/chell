@@ -39,6 +39,7 @@ module Chell
     def csv; self; end
     def s; size; end
     def l; length; end
+    def h; headers; end
     # def column(*args); col(*args); end
     # def c(*args); col(*args); end
     # def r(*args); row(*args); end
