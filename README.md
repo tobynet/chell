@@ -1,8 +1,9 @@
 # Chell
 
-[![Gem Version](https://badge.fury.io/rb/chell.png)](http://badge.fury.io/rb/chell) [![Dependency Status](https://gemnasium.com/toooooooby/chell.png)](https://gemnasium.com/toooooooby/chell) [![Code Climate](https://codeclimate.com/github/toooooooby/chell.png)](https://codeclimate.com/github/toooooooby/chell)
+[![Gem Version](https://badge.fury.io/rb/chell.png)](http://badge.fury.io/rb/chell)  [![Dependency Status](https://gemnasium.com/tobynet/chell.png)](https://gemnasium.com/tobynet/chell) [![Code Climate](https://codeclimate.com/github/tobynet/chell.png)](https://codeclimate.com/github/tobynet/chell)
 
-![Temporary Chell's logo](https://raw.github.com/toooooooby/chell/master/resources/logo.png)
+
+![Temporary Chell's logo](https://raw.github.com/tobynet/chell/master/resources/logo.png)
 
 Ruby + csv + [pry] + [lambda_driver] => csv-shell => **Chell!!** 
 
